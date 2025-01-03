@@ -1,0 +1,132 @@
+#section-1{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#section-1 p {
+    padding-top: 5px;
+}
+#section-1 button{
+    margin-left: 265px;
+}
+#section-2{
+    width: 600px;
+    border-radius: 4px; 
+    height: 390px;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.288);
+}
+#property-button{
+    position: relative;
+    background-color: rgba(193, 190, 190, 0.263);
+    padding: 5px 5px 0px 25px;
+   display: flex;
+    width: 250px;
+    margin-left: 150px;
+    border-radius: 20px;
+    margin-top: 35px;
+}
+#property-button h2{
+    border-radius: 15px;
+    border: none;
+}
+#property-button h2:hover{
+    transition-delay: 50ms;
+    background-color: rgb(43, 202, 226);
+}
+#img-sec{
+    width: 40px;
+    height: 40px;
+}
+#property{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+#property-section{
+    background-color: aqua;
+   margin-left: 70px;
+}
+#search-btn button{
+    height: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 150px;
+}
+#map-section{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+#map-section p {
+    color: red;
+    margin-top: 10px;
+}
+#terms-services{
+    display: flex;
+    margin-top: 10px;
+    gap: 60px;
+    width: 600px;
+}
+#head-section{
+    max-width: 600px;
+    margin-left: 30px;
+}
+#second-part{
+    box-shadow: 1px 3px 8px black;
+    position: absolute;
+    padding-top: 10px;
+    border-radius: 10px;
+    top: 130px;
+    width: 600px;
+    left: 750px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+#second-part p {
+    line-height: 5px;
+    margin-top: 5px;
+}
+@media screen and (max-width:700px) {
+    #section-1{
+        margin-top: 90px;
+    }
+    #section-1 button{
+        margin-left:70px;
+    }
+    #section-2{
+        width: 100%;
+    }#property-button{
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+    #property{
+        margin-left: -25px;
+    }
+    #property-section{
+        margin-left: 55px;
+     }
+     #terms-services{
+        gap: 10px;
+     }
+     #head-section{
+        margin-left: 0px;
+    }
+    #second-part p {
+        line-height: 15px;
+        margin-top: 5px;
+        align-content: center;
+    }
+    #second-part{
+        position: relative;
+        left: 0px;
+        width: 100%;
+        top :0px;
+        height: 100px;
+        vertical-align: auto;
+    }
+    #second-part img{
+        margin-top: 15px;
+    }
+}
