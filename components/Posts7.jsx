@@ -1,20 +1,20 @@
 import '../components/posts.css'
-import profileImg from '../src/assets/veedu images/10016.jpg'
-import postImg1 from '../src/assets/veedu images/10017.png'
-import postImg2 from '../src/assets/veedu images/10018.png'
-import postImg3 from '../src/assets/veedu images/10019.png'
+import profileImg from '../src/assets/veedu images/10011.jpg'
+import postImg1 from '../src/assets/veedu images/10011.jpg'
+import postImg2 from '../src/assets/veedu images/10021.jpeg'
+import postImg3 from '../src/assets/veedu images/10022.jpeg'
 import likeImg from '../src/assets/icons/like.png'
 import likeImg1 from '../src/assets/icons/like2.png'
 import comment from '../src/assets/icons/chat-box.png'
 import share from '../src/assets/icons/share.png'
 import location from '../src/assets/icons/10035.svg'
 import menue from '../src/assets/icons/option.png'
-function Posts6(){
+function Posts7(){
     var postInfo = {
-         headline:'Handicrafts',
-        date:'19 November 2024',
+        headline:'Colors Green Tec',
+        date:'11 November 2024',
         location:'Coimbatore South',
-        propertDetails:'Simple and elegant, beautifully crafted coir products give an aesthetic appeal to any home or office. Crafted by men and women of picturesque coir villages the'
+        propertDetails:'At Wide Range of Services Across Tamil Nadu . Contact - 8778488238.At GREEN ECO TANKS, we take pride in delivering products of the highest'
     
         }
         return(
@@ -44,27 +44,34 @@ function Posts6(){
                 </div>
                             {/* caurocel */}
 
-                            <div id="carouselExample" class="carousel slide">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                    <img src={postImg1} class="d-block w-100"width='100%' height='300px' alt="..."/>
-                                    </div>
-                                    <div class="carousel-item">
-                                    <img src={postImg2} class="d-block w-100" width='100%' height='300px' alt="..."/>
-                                    </div>
-                                    <div class="carousel-item">
-                                    <img src={postImg3} class="d-block w-100"width='100%' height='300px' alt="..."/>
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                                </div>
+
+                            <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={postImg1} class="d-block w-100" width='100%' height='290px' alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src={postImg2} class="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src={postImg3} class="d-block w-100" alt="..."/>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
 
 
                 <div id='posts-like'>
@@ -72,7 +79,7 @@ function Posts6(){
                     <p>1</p>
                 </div>
                 <hr />
-                <div style={{margin:'-10px'}} id='reactions'>
+                <div id='reactions'>
                         <div style={{display:'flex'}}>
                             <img src={likeImg1} width='30px' height='30px' alt="Like" />
                             <p>Like</p>
@@ -86,8 +93,9 @@ function Posts6(){
                         <p>Share</p>
                         </div>
                 </div>
+                
             </div>
             </>
         )
 }
-export default Posts6;
+export default Posts7;

@@ -9,6 +9,7 @@ import Posts3 from '../components/Posts3'
 import Posts4 from '../components/Posts4'
 import Posts5 from '../components/Posts5'
 import Posts6 from '../components/Posts6'
+import Posts7 from '../components/Posts7'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Posts4 />
       <Posts5 />
       <Posts6 />
+      <Posts7 />
     </>
   )
 }

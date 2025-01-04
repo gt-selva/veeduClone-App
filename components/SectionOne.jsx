@@ -9,13 +9,22 @@ import map from '../src/assets/icons/10008.png'
 import Add from '../src/assets/icons/10009.png'
 import dropDown from '../src/assets/icons/down-chevron.png'
 function SectionOne(){
+    // function Head(){
+    //     var head=document.getElementById('head-section')
+    //     var backbtn = document.getElementById('back-btn')
+    //     var section2 = document.getElementById('section-2')
+    //     if(backbtn.click===true){
+    //         section2.style.display='none'
+    //     }
+       
+    // }
     return(
         <>
     <div id='head-section'>
              <div className='container'>
                  <div id='head-section'>
                  <div id='section-1'>
-                 <div><img src={image} width='35px' alt="" /> </div>
+                 <div id='back-btn'><img src={image} width='35px' alt="" /> </div>
                  <div><p>Choose Location</p></div> 
                  <div><img src={editPng} width='20px' alt="" /></div>
                  <button className='btn btn-primary'>All</button>
