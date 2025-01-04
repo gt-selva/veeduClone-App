@@ -1,5 +1,4 @@
 import '../components/SectionOne.css'
-import $ from 'jquery'
 import image from '../src/assets/icons/10003.png'
 import editPng from '../src/assets/icons/edit.png'
 import forSale from '../src/assets/icons/10004.jpg'
