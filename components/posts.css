@@ -42,16 +42,18 @@
     margin: 10px 5px 0px 5px;
 }
 #reactions {
-    height: 90px;
+    height: 110px;
     display: flex;
+    align-items: self-start;
     justify-content: space-around;
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:450px) {
     #posts{
         top: -10px;
         width: 100%;
        position: relative;
        left: 10px;
+       height: auto;
     }
     #post img  {
         width: 80%;

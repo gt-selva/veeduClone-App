@@ -16,7 +16,7 @@ function Posts2(){
 
             headline:'Ezhil Arasu ',
         date:'23 December 2024.',
-        location:'Kinathukadavu (kinathukavoo)',
+        location:'Kinathukadavu ',
         propertDetails:'Bus Stand அருகில் குறைந்த விலையில் வீட்டுமனைகள் | 600Sqft முதல் | DTCP Approved Residential Plots'
     
         }

@@ -6,12 +6,11 @@ import icon from '../src/assets/icons/10016.jpg'
 import Posts1 from '../components/Posts1'
 import Posts2 from '../components/Posts2'
 import Posts3 from '../components/Posts3'
+import Posts4 from '../components/Posts4'
+import Posts5 from '../components/Posts5'
+import Posts6 from '../components/Posts6'
 
 function App() {
-  var homeData = {
-    profileImg:icon,
-    h3:'Veedu for Buisness'
-  }
   return (
     <>
       <Navbar />
@@ -19,7 +18,10 @@ function App() {
       <Cards />
       <Posts1 />
       <Posts2 />
-      <Posts3/>
+      <Posts3 />
+      <Posts4 />
+      <Posts5 />
+      <Posts6 />
     </>
   )
 }
