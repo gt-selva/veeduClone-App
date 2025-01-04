@@ -1,4 +1,4 @@
-import '../components/Posts.css'
+import '../components/posts.css'
 import profileImg from '../src/assets/veedu images/10002.jpg'
 import postImg1 from '../src/assets/veedu images/10003.jpg'
 import postImg2 from '../src/assets/veedu images/10004.jpg'
