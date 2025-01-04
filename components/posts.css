@@ -1,0 +1,64 @@
+#posts{
+    position: relative;
+    top: 300px;
+    left: 750px;
+    width: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    border-radius: 10px; 
+    height: 550px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+#posts-content-text{
+    margin: 5px 5px 10px 10px;
+    width: 80%;
+}
+#menue-icon{
+    display: flex;
+    margin-left: 450px;
+    position: absolute;
+    top: 10px;
+   
+}
+#icon-text{
+    display: flex;
+    margin: 10px 10px;
+}
+#icon-text img{
+    border-radius: 50%;
+}
+#icon-text #profile-details{
+    margin-left: 10px;
+    line-height: 10px;
+}
+#date-location{
+    display: flex;
+}
+#date-location img{
+    margin-top: -3px;
+}
+#posts-like{
+    display: flex;
+    margin: 10px 5px 0px 5px;
+}
+#reactions {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width:700px) {
+    #posts{
+        top: -10px;
+        width: 100%;
+       position: relative;
+       left: 10px;
+    }
+    #post img  {
+        width: 80%;
+    }
+    #menue-icon{
+        margin-left: 300px;
+    }
+}
+
+
