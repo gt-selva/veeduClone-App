@@ -13,9 +13,21 @@ import bed from '../src/assets/icons/10010.svg'
 import bath from '../src/assets/icons/10011.svg'
 import sqFeet from '../src/assets/icons/10012.svg'
 import dtcp from  '../src/assets/icons/10013.svg'
+import Add from '../src/assets/icons/10009.png'
+import dropDown from '../src/assets/icons/down-chevron.png'
 function Cards(){
     return(
         <>
+        <div><div> <div id='second-part'>
+        <div>
+         <img src={Add} width='50px' alt="" />
+         </div>
+         <div>
+          <span style={{color:'red',fontSize:'18px',fontWeight:"bold"}}><p>Create New Post</p></span>  
+            <span style={{color:'red',fontSize:'17px'}}><p>Share your designs, completed projects, new updates, etc...</p></span> 
+         </div>
+         <div><img src={dropDown} width='30px' alt="drop down image" /></div>
+     </div></div>
                
     <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
   <div class="carousel-inner" href='#caurosel-cotent-1'>
@@ -280,6 +292,7 @@ function Cards(){
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+</div>
 </div>
 
                

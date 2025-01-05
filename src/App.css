@@ -3,4 +3,7 @@
     body{
         overflow-x: hiden;
     }
+    #post-sec{
+       top: 1000px; 
+    }
 }

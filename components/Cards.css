@@ -34,6 +34,22 @@
     display: flex;
     justify-content: space-between;
 }
+#second-part{
+    box-shadow: 1px 3px 8px black;
+    position: absolute;
+    padding-top: 10px;
+    border-radius: 10px;
+    top: 130px;
+    width: 600px;
+    left: 750px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+#second-part p {
+    line-height: 5px;
+    margin-top: 5px;
+}
 @media screen and (max-width:450px) {
     #carouselExampleRide{
         margin-top: 15px;
