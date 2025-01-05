@@ -1,5 +1,8 @@
 import '../components/SectionOne.css'
 import App from '../src/App'
+import profileIm from '../src/assets/veedu images/10002.jpg'
+import profileImg1 from '../src/assets/icons/10016.jpg'
+import profileImg2 from '../src/assets/icons/10016.jpg'
 import image from '../src/assets/icons/10003.png'
 import editPng from '../src/assets/icons/edit.png'
 import forSale from '../src/assets/icons/10004.jpg'
@@ -7,6 +10,8 @@ import forRent from '../src/assets/icons/10005.jpg'
 import land from '../src/assets/icons/10006.jpg'
 import model from '../src/assets/icons/10007.jpg'
 import map from '../src/assets/icons/10008.png'
+import location from '../src/assets/icons/10035.svg'
+
 
 function SectionOne() {
 
@@ -25,23 +30,24 @@ function SectionOne() {
                                 var posts = document.getElementById('posts');
                                 var postSec = document.getElementById('post-sec')
                                 var secondPart = document.getElementById('second-part')
-                                var styles = {
-                                    marginLeft: '-500px',
-                                    transition: '2s'
-                                }
 
                                 if (term && term.style.display === "flex") {
                                     loc.style.display = section.style.display = term.style.display = "none"
                                     loc.style.marginLeft = section.style.marginLeft = term.style.marginLeft = "-800px"
+                                    button.style.marginLeft = '300px'
+                                    button.style.transition = '1s'
                                     card.style.top = "80px"
                                     posts.style.top = "29px"
-                                    postSec.style.marginLeft = '-350px'
-                                    postSec.style.transition = '1s'
-                                    secondPart.style.marginLeft = '-350px'
-                                    secondPart.style.transition = '1s'
-                                    // var
+                                    postSec.style.marginLeft = '-320px'
+                                    postSec.style.transition = '3s'
+                                    section.style.marginLeft = secondPart.style.marginLeft = '-320px'
+                                    secondPart.style.transition = '3s'
                                 } else {
+                                    // loc.style.transitionDelay = section.style.transitionDelay = term.style.transitionDelay = "1s"
                                     loc.style.marginLeft = section.style.marginLeft = term.style.marginLeft = "0px"
+                                    section.style.transition = '1s'
+                                    button.style.marginLeft = '0px'
+                                    button.style.transition = '0s'
                                     loc.style.display = term.style.display = "flex"
                                     card.style.display = section.style.display = "block"
                                     card.style.top = "-400px"
@@ -65,8 +71,31 @@ function SectionOne() {
                         <div class='sec-2' id='section-2'>
 
                             <div id='property-button'>
-                                <h2 id='hi' className='btn'>Property</h2>
-                                <h2 className='btn'>Professionals</h2>
+                                <h2 onClick={() => {
+                                    var property = document.getElementById('hi')
+                                    var prof = document.getElementById('prof')
+                                    var porper = document.getElementById('property')
+                                    var professionals = document.getElementById('professional-users')
+                                    var button = document.getElementById('search-btn')
+                                    button.style.marginTop = '0px'
+                                    professionals.style.display = 'none'
+                                    property.style.backgroundColor = 'green'
+                                    prof.style.backgroundColor = ''
+                                    porper.style.display = 'flex'
+                                }} id='hi' className='btn'>Property</h2>
+
+                                <h2 onClick={() => {
+                                    var porper = document.getElementById('property')
+                                    var property = document.getElementById('hi')
+                                    var prof = document.getElementById('prof')
+                                    var professionals = document.getElementById('professional-users')
+                                    var button = document.getElementById('search-btn')
+                                    porper.style.display = 'none'
+                                    button.style.marginTop = '-127px'
+                                    professionals.style.display = 'block'
+                                    property.style.backgroundColor = ''
+                                    prof.style.backgroundColor = 'green'
+                                }} id='prof' className='btn'>Professionals</h2>
                             </div>
 
 
@@ -98,6 +127,49 @@ function SectionOne() {
                                         <h5>Model House</h5>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div id='professional-users'>
+                                <div id='search-items'>
+                                    <input type="text" placeholder='Search Professionals' />
+                                </div>
+
+                                <div id='users'>
+                                    <div id='user-detail'>
+                                        <img src={profileImg1} width='35px' alt="" />
+                                        <h6>Raju Ram</h6>
+                                    </div>
+                                    <div id='user-location'>
+                                        <img src={location} width='25px' alt="" />
+                                        <button className='btn btn-primary w-20'>Follow</button>
+                                    </div>
+                                </div>
+
+                                <div id='users'>
+                                    <div id='user-detail'>
+                                        <img src={profileImg2} width='35px' alt="" />
+                                        <h6>Ezhil Arasu</h6>
+                                    </div>
+                                    <div id='user-location'>
+                                        <img src={location} width='25px' alt="" />
+                                        <button className='btn btn-primary w-20'>Follow</button>
+                                    </div>
+                                </div>
+
+                                <div id='users'>
+                                    <div id='user-detail'>
+                                        <img src={profileIm} width='35px' alt="" />
+                                        <h6>Raju Ram</h6>
+                                    </div>
+                                    <div id='user-location'>
+                                        <img src={location} width='25px' alt="" />
+                                        <button className='btn btn-primary w-20'>Follow</button>
+                                    </div>
+                                </div>
+
+
+
+
                             </div>
 
                             <div id='search-btn'>

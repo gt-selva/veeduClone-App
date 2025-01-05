@@ -11,6 +11,9 @@ import Posts4 from '../components/Posts4'
 import Posts5 from '../components/Posts5'
 import Posts6 from '../components/Posts6'
 import Posts7 from '../components/Posts7'
+import Login from '../components/Login'
+import Footer from '../components/Footer'
+
 // var postsData = [
 //   {
 //     headline: 'Veedu For Buisness',
@@ -61,8 +64,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <div>
-        <div><SectionOne show={true} /> </div>
+      <div id='body-section'>
+        <div>
+          <SectionOne />
+        </div>
         <div id='post-sec'>
           <Cards />
           {/* {postss} */}
@@ -74,6 +79,10 @@ function App() {
           <Posts6 />
           <Posts7 />
         </div>
+      </div>
+      <div id='footer-sec'>
+        <Login />
+        <Footer />
       </div>
 
 

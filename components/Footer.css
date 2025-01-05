@@ -1,0 +1,38 @@
+#sign-up{
+    display: flex;
+    color: white;
+    padding: 20px 10%;
+    justify-content: space-between ;
+    align-items: center;
+    background-color: rgb(54, 54, 252);
+    width: 100%;
+    position: relative;
+    top: 150px;
+}
+#sign-up-btn{
+    width: 190px;
+    height: 60px;
+    border: 5px solid rgb(105, 103, 253);
+    border-radius: 30px;
+    background-color: white;
+}
+#Footer{
+    display: flex;
+    background-color: rgb(56, 55, 91);
+    position: relative;
+    top: 150px;
+    padding: 10px 8%;
+}
+#about{
+    padding-left: 10%;
+}
+@media screen and (max-width:450px) {
+    #footer-section{
+        position: relative;
+        top: 260px;
+    }
+    #sign-up{
+        display: grid;
+        align-items: center;
+    }
+}
