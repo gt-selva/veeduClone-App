@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <SectionOne /> 
+      <SectionOne show={true}/> 
       <Cards />
       <Posts1 />
       <Posts2 />

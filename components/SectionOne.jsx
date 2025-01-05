@@ -1,4 +1,5 @@
 import '../components/SectionOne.css'
+import App from '../src/App'
 import image from '../src/assets/icons/10003.png'
 import editPng from '../src/assets/icons/edit.png'
 import forSale from '../src/assets/icons/10004.jpg'
@@ -9,25 +10,39 @@ import map from '../src/assets/icons/10008.png'
 import Add from '../src/assets/icons/10009.png'
 import dropDown from '../src/assets/icons/down-chevron.png'
 function SectionOne(){
-    // function Head(){
-    //     var head=document.getElementById('head-section')
-    //     var backbtn = document.getElementById('back-btn')
-    //     var section2 = document.getElementById('section-2')
-    //     if(backbtn.click===true){
-    //         section2.style.display='none'
-    //     }
-       
-    // }
+    
     return(
         <>
     <div id='head-section'>
              <div className='container'>
                  <div id='head-section'>
                  <div id='section-1'>
-                 <div id='back-btn'><img src={image} width='35px' alt="" /> </div>
+                 <div onClick={()=>{
+                            var button = document.getElementById('back-btn');
+                            var section = document.getElementById('section-2');
+                            var term = document.getElementById('terms-services');
+                            var loc = document.getElementById('locations');
+                            var card = document.getElementById('carouselExampleRide')
+                            var show = true;
+                                if(show=true){
+                                    section.style.display='none'
+                                    term.style.display='none'
+                                    loc.style.display='none'
+                                    card.style.marginTop='485px'
+                                    show=false
+                                }else{
+                                    section.style.display='block'
+                                    term.style.display='block'
+                                    loc.style.display='block'
+                                    show=true
+                                }
+
+                    }}  id='back-btn'><img src={image} width='35px' alt="" /> </div>
+                        <div id='locations'>
                  <div><p>Choose Location</p></div> 
                  <div><img src={editPng} width='20px' alt="" /></div>
                  <button className='btn btn-primary'>All</button>
+                 </div>
                  </div>
         
                  <div id='section-2'>
@@ -97,8 +112,8 @@ function SectionOne(){
          <img src={Add} width='50px' alt="" />
          </div>
          <div>
-            <p>Create New Post</p>
-            <p>Share your designs, completed projects, new updates, etc...</p>
+          <span style={{color:'red',fontSize:'18px',fontWeight:"bold"}}><p>Create New Post</p></span>  
+            <span style={{color:'red',fontSize:'17px'}}><p>Share your designs, completed projects, new updates, etc...</p></span> 
          </div>
          <div><img src={dropDown} width='30px' alt="drop down image" /></div>
      </div>

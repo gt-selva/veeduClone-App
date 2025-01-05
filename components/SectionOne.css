@@ -4,6 +4,12 @@
     align-items: center;
     gap: 40px;
 }
+#locations{
+    display: flex;
+}
+.hide{
+    display: none;
+}
 #section-1 p {
     padding-top: 5px;
 }
@@ -11,6 +17,7 @@
     margin-left: 265px;
 }
 #section-2{
+    display: block;
     width: 600px;
     border-radius: 4px; 
     height: 390px;
