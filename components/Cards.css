@@ -65,4 +65,13 @@
         top: 0;
         width: 100%;
     }
+    #second-part{
+        margin-left:-750px;
+        margin-top: 30px;
+        height: auto;
+        width: 100%;
+    }
+    #second-part p{
+        line-height: 20px;
+    }
 }

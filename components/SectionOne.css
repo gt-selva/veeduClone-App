@@ -126,6 +126,7 @@
         margin-left:70px;
     }
     #section-2{
+        margin-top: 150px;
         width: 100%;
     }#property-button{
         margin-left: 70px;
@@ -137,8 +138,10 @@
     #property-section{
         margin-left: 55px;
      }
-     #terms-services{
+     .terms-services{
         gap: 10px;
+        
+        
      }
      #head-section{
         margin-left: 0px;
